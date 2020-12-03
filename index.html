@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="styles.css">
+	<title>Ajutor pentru programator</title>
+</head>
+<body>
+    <header>
+        <div class="container container-nav">
+            <div>
+                <div class="site-title">
+                    <img src="img/Asset 1 1.png" alt="Title">
+                </div>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#" class="current-page">Logare</a></li>
+                    <li><a href="#">Creare cont</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <svg id="menu-icon" class="menu-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6666 20.6667H27.3333V27.3333H20.6666V20.6667ZM10.6666 20.6667H17.3333V27.3333H10.6666V20.6667ZM0.666626 20.6667H7.33329V27.3333H0.666626V20.6667ZM20.6666 10.6667H27.3333V17.3333H20.6666V10.6667ZM10.6666 10.6667H17.3333V17.3333H10.6666V10.6667ZM0.666626 10.6667H7.33329V17.3333H0.666626V10.6667ZM20.6666 0.666656H27.3333V7.33332H20.6666V0.666656ZM10.6666 0.666656H17.3333V7.33332H10.6666V0.666656ZM0.666626 0.666656H7.33329V7.33332H0.666626V0.666656Z" fill="#263238"/>
+                </svg>
+                    
+            </nav>
+        </div>
+
+    </header>
+
+    <div id="drop-menu" class="drop-menu">
+        <a class="drop-menu-item current-page">Logare</a>
+        <a class="drop-menu-item other-pages">Create cont</a>
+        <a class="drop-menu-item other-pages">Contact</a>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content ">
+
+            <div class="title">
+                <h2>Exprimă-ți frustrările</h2>
+                <svg class="close-modal-btn" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 0.5C6.1075 0.5 0.5 6.1075 0.5 13C0.5 19.8925 6.1075 25.5 13 25.5C19.8925 25.5 25.5 19.8925 25.5 13C25.5 6.1075 19.8925 0.5 13 0.5ZM18.2588 16.4913L16.4913 18.2588L13 14.7675L9.50875 18.2588L7.74125 16.4913L11.2325 13L7.74125 9.50875L9.50875 7.74125L13 11.2325L16.4913 7.74125L18.2588 9.50875L14.7675 13L18.2588 16.4913Z" fill="#263238"/>
+                </svg>
+            </div>
+
+            <div class="input-section">    
+                <select id="type_subject" placeholder="Alege materia">
+                    <option value="" disabled selected>Alege materia</option>
+                    <option value="PC">PC</option>
+                    <option value="USO">USO</option>
+                    <option value="Mate1">Mate 1</option>
+                    <option value="Mate2">Mate 2</option>
+                </select><br><br>
+                <input id="type_project" type="text" placeholder="Titlul proiectului"><br><br>
+                <a id="btn-add" id="type_text" class="" href="#">Încarcă</a>
+            </div>
+
+            <div class="output">
+                <h2>Plângeri introduse până acum.</h2>
+            </div>
+            <ul id="list">
+
+            </ul> 
+        </div>
+    </div>
+
+    <div class="main-part">
+        <div class="main1">
+            <div class="mainPart-text">
+                <div class="main-text">
+                    <h1 class="second-title">Cumpăratul de teme nu a fost niciodată mai simplu!</h1>
+                    <p class="main-text">Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</p>
+                </div>
+            </div>
+
+            <div class="btns">
+                <a class="btn1" id="buy-btn"  href="#">Vreau să cumpăr</a>
+                <a class="btn2" href="#">Vreau sa fac teme pentru alții</a> 
+            </div>
+        </div>
+
+        <img class="main-img" src="img/Group 1.png" alt="Girl studying">
+
+    </div>
+
+    <div class="middle-part">
+        <h1>Cum funcționează?</h1>
+        <div class="steps">
+            <article class="step">
+                <h2 class="article-nr">1</h2>
+                <p class="article-text">Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p>
+            </article>
+            <article class="step">
+                <h2 class="article-nr">2</h2>
+                <p class="article-text">Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p>
+            </article>
+            <article class="step last-step">
+                <h2 class="article-nr">3</h2>
+                <p class="article-text">După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="contact-part">
+        <div class="contact-text">
+            <h2>
+                Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?
+            </h2>
+            <p>
+                Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.
+            </p>
+        </div>
+        <div class="input-part">
+            <p>Nume</p>
+            <input class="name-email-input" type="text"><br><br>
+            <p>Email</p>
+            <input class="name-email-input" type="text"><br><br>
+            <p>Înjurătura</p>
+            <input class="message-input" type="text"><br><br>
+            <a class="submit-btn" href="#">Trimite</a>   
+        </div>
+    </div>
+
+    <footer class="bottom-part">
+        <svg width="101" height="35" viewBox="0 0 101 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.8819 17.2463C19.8819 14.8876 18.0033 13.0007 15.655 13.0007C13.3068 13.0007 11.4282 14.8876 11.4282 17.2463C11.4282 19.605 13.3068 21.492 15.655 21.492C18.0033 21.492 19.8819 19.605 19.8819 17.2463ZM22.0736 17.2463C22.0736 20.863 19.2557 23.6934 15.655 23.6934C12.0544 23.6934 9.23645 20.863 9.23645 17.2463C9.23645 13.6297 12.0544 10.7992 15.655 10.7992C19.2557 10.7992 22.0736 13.6297 22.0736 17.2463ZM23.7956 10.4847C23.7956 11.4282 23.1694 12.0572 22.2301 12.0572C21.2908 12.0572 20.6646 11.4282 20.6646 10.4847C20.6646 9.54126 21.2908 8.91228 22.2301 8.91228C23.1694 8.91228 23.7956 9.69851 23.7956 10.4847ZM15.655 6.86808C13.7764 6.86808 9.86265 6.71083 8.29715 7.33981C7.2013 7.81155 6.262 8.75503 5.9489 9.85576C5.3227 11.4282 5.47925 15.3594 5.47925 17.2463C5.47925 19.1333 5.3227 23.0645 5.9489 24.6369C6.262 25.7376 7.2013 26.6811 8.29715 26.9956C9.86265 27.6246 13.933 27.4674 15.655 27.4674C17.3771 27.4674 21.4474 27.6246 23.0129 26.9956C24.1087 26.5239 24.8915 25.7376 25.3611 24.6369C25.9873 22.9072 25.8308 18.976 25.8308 17.2463C25.8308 15.5166 25.9873 11.4282 25.3611 9.85576C25.048 8.75503 24.1087 7.81155 23.0129 7.49706C21.4474 6.71083 17.5336 6.86808 15.655 6.86808ZM28.179 17.2463V22.4355C28.179 24.3224 27.5528 26.2094 26.1439 27.7818C24.7349 29.1971 22.8563 29.826 20.8212 29.826H10.4889C8.61025 29.826 6.73165 29.1971 5.16615 27.7818C3.91375 26.3666 3.131 24.4797 3.131 22.4355V17.2463V12.0572C3.131 10.013 3.91375 8.12605 5.16615 6.71083C6.73165 5.45286 8.61025 4.66663 10.4889 4.66663H20.8212C22.6998 4.66663 24.5784 5.29561 26.1439 6.71083C27.3963 8.12605 28.179 10.013 28.179 12.0572V17.2463Z" fill="white"/>
+            <g clip-path="url(#clip0)">
+            <path d="M82.0117 5.57971C79.662 5.57971 77.77 7.4801 77.77 9.84024V24.6525C77.77 27.0127 79.662 28.9131 82.0117 28.9131H90.0043V19.7912H87.6029V16.507H90.0043V13.7012C90.0043 11.4968 91.4231 9.47274 94.6916 9.47274C96.015 9.47274 96.9936 9.60035 96.9936 9.60035L96.9166 12.6672C96.9166 12.6672 95.9186 12.6578 94.8296 12.6578C93.6509 12.6578 93.4619 13.2032 93.4619 14.1088V16.507H97.0103L96.8556 19.7912H93.4619V28.9131H96.7584C99.1081 28.9131 101 27.0127 101 24.6526V9.84026C101 7.48012 99.1081 5.57974 96.7584 5.57974H82.0117L82.0117 5.57971Z" fill="white"/>
+            </g>
+            <path d="M68.4433 8.69191C67.402 9.14308 66.2689 9.46779 65.1017 9.59425C66.3135 8.87113 67.221 7.72872 67.6538 6.38136C66.5167 7.06082 65.271 7.53726 63.972 7.78956C63.429 7.20655 62.7724 6.74209 62.0429 6.42514C61.3135 6.10818 60.5268 5.94552 59.732 5.94728C56.5164 5.94728 53.9302 8.56544 53.9302 11.7783C53.9302 12.2295 53.9847 12.6807 54.0731 13.1148C49.2581 12.8618 44.9638 10.5513 42.1088 7.01369C41.5886 7.90617 41.316 8.92237 41.3193 9.95656C41.3193 11.98 42.3436 13.7642 43.9055 14.8135C42.985 14.7771 42.0861 14.523 41.2819 14.0718V14.1436C41.2819 16.9771 43.276 19.3252 45.9336 19.8652C45.4346 19.9954 44.9213 20.062 44.4057 20.0635C44.028 20.0635 43.6707 20.0259 43.31 19.9746C44.045 22.2852 46.1854 23.9634 48.7341 24.0181C46.74 25.5869 44.2424 26.5098 41.5303 26.5098C41.0437 26.5098 40.5945 26.4927 40.1283 26.438C42.7009 28.0957 45.7532 29.0527 49.0404 29.0527C59.7116 29.0527 65.5509 20.1729 65.5509 12.4653C65.5509 12.2124 65.5509 11.9595 65.5339 11.7066C66.6636 10.876 67.6538 9.84718 68.4433 8.69191Z" fill="white"/>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="23.23" height="23.3333" fill="white" transform="translate(77.77 5.57971)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        <p>Copyright 2020 | Cine ne pârăște o mierlește.</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

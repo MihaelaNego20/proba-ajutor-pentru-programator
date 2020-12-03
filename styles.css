@@ -1,0 +1,564 @@
+body{
+    margin: 0; 
+    text-align: center;
+    background: #ffffff;
+    font-family: Merriweather;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------
+Typography
+---------------------*/
+
+.site-title{
+    margin-left: 2em;
+}
+
+/*-------------------
+Layout
+---------------------*/
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+    header {
+        text-align: center;
+    }
+}
+
+.main-part{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2.5em;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.main-img{
+    max-width: 80%;
+    margin-right: 3em;
+    object-fit: cover;
+}
+
+.mainPart-text{
+    padding: 0 2em;
+}
+
+.main-text{
+    padding-top: 2em;
+    padding-bottom:2em ;
+    font-weight: 300;
+    text-align: left;
+    font-size: 1rem;
+    color: #263238;
+}
+
+.second-title{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+@media(max-width: 675px){
+    .main-part{
+        flex-direction: column; 
+    }
+
+    .main-text{
+        text-align: center;
+    }
+
+}
+
+
+.middle-part{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin: 0;
+    background: #92E3A9;
+    color: #263238;
+}
+
+.middle-part h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2em;
+}
+
+.middle-part p{
+    font-size: 1rem;
+    margin-bottom: 4em;
+}
+
+.steps{
+    display: flex;
+    margin-right: 0;
+    
+}
+
+.step{
+    margin-left: 6em;
+    display: flex;
+}
+
+.last-step{
+    margin-right: 6em;
+}
+
+.article-text{
+    margin: 0;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.article-nr{
+    line-height: 100%;
+    height: 50px;
+    font-size: 2.5rem;
+    padding: .0em .4em;
+    margin: 0;
+    background-color: #263238;
+    color: #92E3A9;
+    border-radius: 5px;
+}
+
+.contact-part{
+    display: flex;
+    justify-content: space-around;
+    color: #263238;
+    margin-bottom: 4em;
+    box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.2);
+    border-radius: 5px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-top: 5em;
+    align-self: center;
+}
+
+.contact-text{
+    margin-top: 4em;
+    width: 30%;
+    text-align: left;
+}
+
+.contact-part h2{
+    font-size: 1.8rem;
+}
+
+.input-part{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-part p{
+
+    text-align: left;
+    margin: 0;
+    margin-bottom: .5em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #263238;
+}
+
+.name-email-input{
+    border: 1px solid;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.message-input{
+    border: 1px solid;
+    width: 350px;
+    height: 82px;
+    border-radius: 5px;
+}
+
+.bottom-part{
+    color: #ffffff;
+    background: #263238;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/*navigation*/
+
+.menu-icon{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin-left: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px 22px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #263238;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #92E3A9;
+    background-color: #263238;
+    border-radius: 5px;
+}
+
+.current-page{
+    background-color: #263238;
+    color: #92E3A9;
+    border-radius: 5px;
+}
+
+.current-page:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon{
+        display: inline;
+        margin-top: 1em;
+        margin-right: .75em;
+
+    }
+}
+
+h1{
+    font-weight: 600px;
+}
+
+.btns{
+    display: flex;
+}
+
+.btn1,
+.btn2{
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .5em 1.25em;
+    font-size: 1rem;
+}
+
+.btn1{
+    color: #92E3A9;
+    background: #263238;
+    margin-left: 2em;
+    margin-right: 2.5em;
+}
+
+.btn2{
+    color: #263238;
+    background: #92E3A9;
+    margin-right: 2.5em;
+    
+}
+
+.btn1:hover,
+.btn1:focus{
+    color: #ffffff;   
+}
+
+.btn2:hover,
+.btn2:focus{
+    color: #ffffff;
+    background: #263238;
+}
+
+
+@media(max-width: 750px){
+
+    .main-part{
+        margin: 0;
+    }
+
+    .second-title{
+        font-size: 2em;
+    }
+
+    .btns{
+        flex-direction: column;
+    }
+    
+    .btn1,
+    .btn2{
+        margin: 0; 
+        margin-top: 1em;  
+        margin-right: 2em;
+        margin-left: 2em;
+    } 
+
+    .main-img{
+        margin: 2em;
+        
+    }
+
+}
+
+.submit-btn{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .5em 1.5em;
+    font-size: 1rem;
+    color: #92E3A9;
+    background: #263238;
+
+    justify-self: start;
+    align-self: start;
+}
+
+.submit-btn:hover,
+.submit-btn:focus{
+    color: #ffffff;
+    background: #263238;   
+
+}
+
+@media(max-width: 675px){
+    .middle-part h1{
+        font-size: 2rem;
+    }
+
+    .steps{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .step{
+        margin-left: 2em;
+        margin-right: 2em;
+
+    }
+
+    .contact-part{
+        flex-direction: column;
+    }
+
+    .contact-text{
+        text-align: center;
+        align-self: center;
+        width: 80%;
+    }
+
+    .contact-text h2{
+        font-size: 1.5rem;
+    }
+
+    .input-part{
+        align-self: center;
+    }
+
+    .submit-btn{
+        align-self: center;
+    }
+    
+    .name-email-input{
+        width: 256px;
+        height: 40px;  
+    }
+    
+    .message-input{
+        width: 256px;
+        height: 82px;
+    }
+
+    .bottom-part p{
+        font-size: .75rem;
+    }
+
+}
+
+/**
+Modal
+*/
+
+.modal {
+    z-index: 999;
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(0, 0, 0, 0.4);
+    transition: opacity 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    background: #92E3A9;
+    font-size: .75rem;
+    padding-left: 3em;
+    padding-right: 1em;
+}
+
+.modal-content {
+    display: block;
+    background-color:#ffffff;
+    opacity: 100%;
+    width: 40%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.close-modal-btn {
+    align-self: center;
+    margin-right: .5em;
+    padding: 3px;
+}
+
+.input-section{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.input-section input{
+    text-align: left;
+    width: 419.83px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #263238;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #263238;
+
+}
+
+.input-section select{
+    text-align: left;
+    width: 419.83px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #263238;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #263238;
+
+}
+
+.input-section a{
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .5em 4em;
+    font-size: 1rem;
+    color: #92E3A9;
+    background: #263238; 
+}
+
+.input-section a:hover{
+    color: #ffffff;
+    background: #263238;
+}
+
+.output{
+    background-color:  #92E3A9;
+    font-size: .75rem;
+    margin: 0;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    text-align: left;
+    padding-left: 3em;
+    
+}
+
+@media(max-width: 675px){
+    .modal-content{
+        width: 95%;
+        height: 60%;
+    }
+
+    .input-section input,
+    .input-section select{
+        width: 271px;
+        height: 40px;
+    }
+    
+}
+
+/**
+Drop-menu (mobile)
+*/
+
+.drop-menu {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: #92E3A9;
+    transition: height 0.3s ease-in-out;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.drop-menu-item{
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .5em 1.25em;
+    font-size: 1rem;
+    margin-left: 2em;
+    margin-right: 2.5em;  
+}
+
+.other-pages{
+    background-color: #ffffff;
+    color: #263238;
+}
+
+.subjects{
+    margin-bottom: 0;
+}
+
+.projects{
+    margin-top: 0;
+}
